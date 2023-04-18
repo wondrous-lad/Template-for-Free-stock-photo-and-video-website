@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-body: #b6cbce;
+    --color-heading: #eef3db;
+    --font-base: "Bai Jamjuree";
+    --color-heading2: #ffea00;
+    --color-button:#0080ff;
+    --color-hover: #0099ff;
+}
+
+* {
+box-sizing: border-box;
+}
+/* REGISTRATION FORM */
+#form-message{
+    text-align: center;
+    color: #00ffff;
+    font-weight:600 ;
+    font-size: large;
+}
+
+.container-reg{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.container-reg  label {
+    color: var(--color-heading2);
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.container-reg  input {
+    border-radius: 25px;
+    border: none;
+    height: 30px;
+    padding-left: 12px;
+}
+.container-reg  .header {
+    color: var(--color-body);
+    text-align: center;
+    margin-bottom: 10px;
+}
+.container-reg  .submit {
+    background-color: var(--color-button);
+    text-align: center;
+    width:100%;
+    color: var(--color-body);
+    font-weight: 600;
+    margin-top: 35px;
+    padding: 5px;
+    border-radius: 7px;
+    border-color: var(--color-button);
+}
+
+.container-reg .submit:hover{
+    background-color: var(--color-hover);
+    transition: all 0.3 ease;
+}
+
+
+/* REGISTRATION FORM */
+body {
+    height:100vh;
+    width:100vw;
+    margin: 10%;
+    padding: 0px 50px;
+    font-family: var(--font-base),sans-serif !important;
+    background-color: black !important;
+}

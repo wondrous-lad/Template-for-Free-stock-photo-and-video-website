@@ -1,0 +1,115 @@
+/* .stockimage-grid {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px 30px;
+  }
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+:root {
+    --color-body: #b6cbce;
+    --color-heading: #eef3db;
+    --font-base: "Bai Jamjuree";
+}
+.header {
+    text-align: center;
+    padding: 32px;
+    color: var(--color-body);
+
+  }
+
+* {
+box-sizing: border-box;
+}
+
+body {
+    margin: 10%;
+    padding: 0px 50px;
+    color: var(--color-heading);
+    font-family: var(--font-base),sans-serif !important;
+    background-color: black !important;
+}
+
+.row {
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+
+  }
+  
+  .column .image-container .picture {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 3px;
+    margin-bottom: 17px;
+  }
+
+  .image-container{
+    position: relative;
+    
+}
+
+.picture{
+    z-index: 1;
+    position: relative;
+} 
+
+.image-container .name{
+    position: absolute;
+    left:0;
+    bottom: 0;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 10%;
+    margin-bottom: 0%;
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    font-weight:500;
+    background-color: rgba(32, 32, 32, 0.535);
+    border-radius: 3px;
+    font-size:medium;
+    text-align: center;
+    opacity: 0;
+}
+
+.image-container:hover .name{
+    opacity: 100;
+    background-color: rgba(32, 32, 32, 0.535);
+    border-radius: 3px;
+    transition: 0.5s ease;
+
+}
+
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+    .name{
+        font-size:large;
+    }
+   
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+    .name{
+        font-size:large;
+    }
+  }
